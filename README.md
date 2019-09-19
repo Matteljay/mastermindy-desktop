@@ -48,7 +48,7 @@ Further reading about the history, math & strategy of the game:
 - Layout: 22 classes with an average length of 100 lines per class
 - [Java-Swing](https://en.wikipedia.org/wiki/Swing_(Java)) dynamic JComponent placement & GUI construction during runtime
 - A terminal/console UI version is hidden within the code, consider it an easter egg for you to find and run
-- For Android mobile devices, see project [MasterMindy-android](https://github.com/Matteljay/mastermindy)
+- For Android mobile devices, see project [MasterMindy-android](https://github.com/Matteljay/mastermindy-android)
 
 
 ## How to run

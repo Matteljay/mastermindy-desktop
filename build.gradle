@@ -1,0 +1,45 @@
+// build.gradle
+//
+
+apply plugin: 'java'
+
+repositories {
+   jcenter()
+}
+
+def pkgversion = new Date().format('yyyyMMdd')
+ant.replaceregexp(file: 'src/swinggui/SettingsPanel.java', match: "Version [0-9]*", replace: 'Version ' + pkgversion)
+
+sourceSets.main.java.srcDir 'src'
+sourceSets.test.java.srcDir 'test'
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+}
+
+jar {
+    baseName 'mastermindy'
+    version pkgversion
+    manifest.attributes 'Main-Class': 'swinggui.GUIController'
+    from('src/swinggui') {
+        include 'res/**/*.png'
+        into 'swinggui'
+    }
+}
+
+/* Enable ProGuard task
+buildscript {
+    repositories.flatDir dirs: '/opt/proguard/lib'
+    dependencies.classpath ':proguard:'
+}
+
+task proguard(type: proguard.gradle.ProGuardTask) {
+    configuration 'proguard.cfg'
+    injars 'build/libs/mastermindy-' + pkgversion + '.jar'
+    outjars 'build/libs/mastermindy-' + pkgversion + 'pg.jar'
+}
+*/
+
+// EOF
+

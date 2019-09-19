@@ -10,8 +10,9 @@
 
 ## Screenshots
 
-[MacOS Sierra](https://github.com/Matteljay/mastermindy-desktop/blob/master/screenshots/macos10.png)
-[Windows 10](https://github.com/Matteljay/mastermindy-desktop/blob/master/screenshots/win10.png)
+- [MacOS Sierra](https://github.com/Matteljay/mastermindy-desktop/blob/master/screenshots/macos10.png)
+- [Windows 10](https://github.com/Matteljay/mastermindy-desktop/blob/master/screenshots/win10.png)
+- [Arch Linux](https://github.com/Matteljay/mastermindy-desktop/blob/master/screenshots/linuxArch.png)
 
 
 ## About
@@ -34,9 +35,9 @@ Further reading about the history, math & strategy of the game:
 - Flexible amount of pawn fields
 - Flexible assortment of pawn colors to choose from
 - Difficulty change for allowing duplicate colors in the secret
-- Ability to show (collision sensitive) startup hints
+- Ability to show collision sensitive startup hints
 - Various time and turn limiting capabilities
-- Drag & drop pawns on click
+- Drag & drop pawns using mouse action
 - Uniquely named pawns for color blind people 
 - Bitcoin donation ability :)
 
@@ -52,7 +53,7 @@ Further reading about the history, math & strategy of the game:
 
 ## How to run
 
-- Download the .jar file from the [releases](https://github.com/Matteljay/mastermindy-android/releases) page.
+- Download the .jar file from the [releases](https://github.com/Matteljay/mastermindy-desktop/releases) page.
 
 - Linux users: you probably already have the required [JRE](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 Try running the .jar file in a terminal window with the command `java -jar ~/Downloads/nameOfJarFile.jar`.
